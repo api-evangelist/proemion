@@ -1,7 +1,34 @@
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 14
+  pass: local-v1
 aid: proemion
 name: Proemion
-description: Proemion is a company surfaced as a portfolio company of battery-ventures and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Proemion is a telematics provider for off-highway and heavy equipment OEMs,
+  embedding data collection directly into the machine down to the ECU across CAN
+  and Ethernet networks. Its API-first DataPlatform telematics cloud, DataPortal
+  web application, Machine Companion app, ProInsights analytics, and Mixed Fleet
+  Telematics let manufacturers and fleet operators obtain, configure, and analyze
+  machine data. Proemion also ships Telematics Control Units (CAN/Ethernet
+  gateways), CANlink displays, and wired CAN interfaces, and exposes a REST API,
+  an AEMP/ISO 15143-3 standard export, and the CANlink mobile 10000 protobuf
+  device API. It serves construction, agriculture, material handling, municipal
+  services, and ground-support-equipment markets.
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://avatars.githubusercontent.com/u/18528816?v=4
 url: https://raw.githubusercontent.com/api-evangelist/proemion/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +38,115 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-apis: []
+- Telematics
+- IoT
+- Off-Highway Equipment
+- CAN Bus
+- Fleet Management
+- Machine Data
+- OEM
+- AEMP
+- Construction
+- Agriculture
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+apis:
+- name: Proemion DataPlatform REST API
+  description: >-
+    Obtain and configure machine data from the DataPlatform, Proemion's
+    API-first telematics cloud. Secured with OAuth2 client credentials
+    (OpenID Connect / Keycloak).
+  humanURL: https://docs.proemion.com/api/
+  baseURL: https://api.proemion.com
+  tags:
+  - Telematics
+  - Machine Data
+  - REST
+  properties:
+  - type: Documentation
+    url: https://docs.proemion.com/api/
+  - type: Authentication
+    url: authentication/proemion-authentication.yml
+- name: Proemion AEMP API
+  description: >-
+    Export machine data from the DataPlatform according to the AEMP
+    (ISO 15143-3) telematics data-exchange standard for mixed-fleet
+    interoperability.
+  humanURL: https://docs.proemion.com/aemp/
+  baseURL: https://api.proemion.com
+  tags:
+  - AEMP
+  - ISO 15143-3
+  - Fleet
+- name: Proemion CANlink mobile 10000 API
+  description: >-
+    Integrate the CANlink mobile 10000 telematics control unit with other
+    platforms over an HTTPS/WebSocket protobuf API (CLM10000 protocol).
+  humanURL: https://docs.proemion.com/canlink-mobile-10000-api/
+  tags:
+  - CAN Bus
+  - Protobuf
+  - Device API
+  properties:
+  - type: Protobuf
+    url: grpc/proemion-clmapi.proto
+common:
+- type: VulnerabilityDisclosure
+  url: security/proemion-vulnerability-disclosure.yml
+- type: Security
+  url: https://docs.proemion.com/docs/shared/pdf/proemion_vdp_v1.0.pdf
+- type: DomainSecurity
+  url: security/proemion-domain-security.yml
+- type: Website
+  url: https://www.proemion.com
+- type: DeveloperPortal
+  url: https://docs.proemion.com/
+- type: Documentation
+  url: https://docs.proemion.com/
+- type: APIReference
+  url: https://docs.proemion.com/api/
+- type: GitHubOrganization
+  url: https://github.com/Proemion
+- type: Blog
+  url: https://www.proemion.com/en/resources/knowledge/blog.html
+- type: Support
+  url: https://docs.proemion.com/#support
+- type: Login
+  url: https://dataportal.proemion.com/#!/login
+- type: PrivacyPolicy
+  url: https://www.proemion.com/en/privacy-policy.html
+- type: StatusPage
+  url: https://status.proemion.com/
+- type: TrustCenter
+  url: https://trust.proemion.com/
+- type: Protobuf
+  name: CANlink mobile 10000 protobuf definition
+  url: grpc/proemion-clmapi.proto
+- type: Packages
+  url: packages/proemion-packages.yml
+- type: SDKs
+  url: packages/proemion-packages.yml
+- type: CLI
+  url: cli/proemion-cli.yml
+- type: WellKnown
+  url: well-known/proemion-well-known.yml
+- type: SecurityTxt
+  url: well-known/proemion-security.txt
+- type: Authentication
+  url: authentication/proemion-authentication.yml
+- type: OAuthScopes
+  url: scopes/proemion-scopes.yml
+- type: Conformance
+  url: conformance/proemion-conformance.yml
+- type: Conventions
+  url: conventions/proemion-conventions.yml
+- type: Lifecycle
+  url: lifecycle/proemion-lifecycle.yml
+- type: LLMsTxt
+  url: llms/proemion-llms.txt

@@ -1,0 +1,22 @@
+generated: '2026-07-20'
+method: searched
+source: https://api.proemion.com/.well-known/openid-configuration, https://docs.proemion.com/aemp/
+standards:
+- id: oauth2
+  conforms: true
+  evidence: DataPlatform API uses OAuth2 client-credentials via Keycloak.
+- id: oidc
+  conforms: true
+  evidence: /.well-known/openid-configuration discovery document served at api.proemion.com (200).
+- id: aemp-iso-15143-3
+  conforms: true
+  evidence: Proemion publishes an AEMP (ISO 15143-3) telematics-standard export API.
+- id: rfc9116-security-txt
+  conforms: true
+  evidence: PGP-signed /.well-known/security.txt published at proemion.com.
+- id: protobuf
+  conforms: true
+  evidence: CANlink mobile 10000 device API defined in proto2 (grpc/proemion-clmapi.proto).
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: not confirmed; DataPlatform REST error format not published in a machine-readable spec.

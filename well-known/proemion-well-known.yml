@@ -1,0 +1,25 @@
+generated: '2026-07-20'
+method: searched
+source: live probes of /.well-known/ on Proemion hosts
+hosts:
+- host: https://api.proemion.com
+  documents:
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: proemion-openid-configuration.json
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+- host: https://www.proemion.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: proemion-security.txt
+- host: https://docs.proemion.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    note: canonical security.txt served from proemion.com

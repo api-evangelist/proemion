@@ -1,0 +1,16 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/Proemion/CANlink-Mobile-API-Clients/tree/main/clmprotoclient
+name: clmshell
+description: >-
+  Interactive shell / CLI for communicating with the CANlink mobile 10000
+  telematics control unit over its protobuf WebSocket API. Ships as a console
+  entry point of the first-party clmprotoclient Python package.
+package: clmprotoclient
+entry_point: clmprotoclient.clmshell:main
+license: Apache-2.0
+install:
+- pip install "git+https://github.com/Proemion/CANlink-Mobile-API-Clients.git#subdirectory=clmprotoclient"
+invoke: clmshell
+official: true
+binary_catalogued_in: packages/proemion-packages.yml

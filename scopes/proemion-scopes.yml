@@ -1,0 +1,39 @@
+generated: '2026-07-20'
+method: searched
+source: https://api.proemion.com/.well-known/openid-configuration
+docs: https://docs.proemion.com/docs/dataportal/organization_structure/#api-client-management
+note: >-
+  OpenID Connect realm scopes advertised by the Proemion Keycloak authorization
+  server (scopes_supported). These are the standard OIDC/service-account scopes;
+  fine-grained DataPlatform permissions are governed by the API client's assigned
+  role/organization in the DataPortal rather than by request scopes.
+schemes:
+- name: OAuth2
+  flows:
+  - flow: clientCredentials
+    tokenUrl: https://dataportal.proemion.com/auth/realms/af0b450b-63cb-4f6e-a994-bdab447c64ba/protocol/openid-connect/token
+scopes:
+- scope: openid
+  description: OpenID Connect authentication.
+- scope: profile
+  description: Basic profile claims.
+- scope: email
+  description: Email claim.
+- scope: roles
+  description: Realm/client role claims.
+- scope: offline_access
+  description: Issue a refresh token for offline access.
+- scope: service_account
+  description: Service-account (machine-to-machine) client-credentials access.
+- scope: basic
+  description: Basic claim set.
+- scope: address
+  description: Address claims.
+- scope: phone
+  description: Phone claims.
+- scope: microprofile-jwt
+  description: MicroProfile JWT claims (groups/roles).
+- scope: web-origins
+  description: Allowed CORS web origins.
+- scope: acr
+  description: Authentication Context Class Reference.

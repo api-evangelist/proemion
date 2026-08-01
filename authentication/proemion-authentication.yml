@@ -1,0 +1,31 @@
+generated: '2026-07-20'
+method: searched
+source: https://api.proemion.com/.well-known/openid-configuration
+docs: https://docs.proemion.com/docs/dataportal/organization_structure/#api-client-management
+summary:
+  types: [oauth2, openIdConnect]
+  oauth2_flows: [clientCredentials]
+  note: >-
+    The DataPlatform REST API authenticates with OAuth2 API client credentials
+    (client_id + client_secret) issued from the DataPortal under
+    Organization > API Client management. Tokens are issued by a Keycloak
+    OpenID Connect provider. User credentials are not accepted for the API.
+schemes:
+- name: OpenIDConnect
+  type: openIdConnect
+  openIdConnectUrl: https://api.proemion.com/.well-known/openid-configuration
+  issuer: https://dataportal.proemion.com/auth/realms/af0b450b-63cb-4f6e-a994-bdab447c64ba
+  sources: [well-known/proemion-openid-configuration.json]
+- name: OAuth2
+  type: oauth2
+  flows:
+  - flow: clientCredentials
+    tokenUrl: https://dataportal.proemion.com/auth/realms/af0b450b-63cb-4f6e-a994-bdab447c64ba/protocol/openid-connect/token
+    authorizationUrl: https://dataportal.proemion.com/auth/realms/af0b450b-63cb-4f6e-a994-bdab447c64ba/protocol/openid-connect/auth
+  token_endpoint_auth_methods:
+  - private_key_jwt
+  - client_secret_basic
+  - client_secret_post
+  - tls_client_auth
+  - client_secret_jwt
+  sources: [well-known/proemion-openid-configuration.json]

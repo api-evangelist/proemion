@@ -1,0 +1,26 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Contact: mailto:infosec@proemion.com
+Encryption: https://proemion.com/.well-known/pgp-key.asc
+Policy: https://docs.proemion.com/docs/shared/pdf/proemion_vdp_v1.0.pdf
+Preferred-Languages: en, de
+Canonical: https://proemion.com/.well-known/security.txt
+Expires: 2027-01-26T00:00:00Z
+
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEEAk7uwvfkW6LhsDNFulOFjBlNmNYFAml4uxIACgkQulOFjBlN
+mNaxVw/9HAmD2nTMBaU0R3xUFTg0IisRphJfyx6oLDZwGg/4YPvDVSQ7KUQEUfiw
+UJfiD/GZY8wdDyMEQX4Js0s3UVm0hscbZ5J2+04/+lBBgm3RGi6kY49gvFpK/spb
+VuLYhmYGLIZXWEWrxWQD+Hzgbdw+lP2BtgXq3QS+ZSniyth7crCfyq5gOwOv2lhM
+UhSu3ujdBIBl3hy2v3VztcXsJY5dsYyRKLo0ww68CK94hvtFl/UTuqsidPpcgCbr
+naxrIZjFNEWovcmNCmjwK+10ELswbyP4KcPtljjTgRq9abLfFZWWJpADi/Ysr7q/
+0ARRhY9einfm1XTYBFJJDPebsT5VsHcrXjVXHxqd0PHW46bD9HmiDMD/YUVJPWVW
+VfeJN7QMp6rNvC2SVwI1zAIHpFvEdK31lcPS4UL7F9S1+1ahaOK0iNTXDYRRByEY
+0ETibnZxF0ewmFdSbJ7GSwdAV5cIiQD7nqrGUyCPqicX2EBwiEmb7QFVoejVHixs
+W58ILoaLJkFfgPDHDm+Olns3hrZ9UGsQrbL1T1V4V9YPGoMmV8v7DtqNeqTDPpvp
+BfqjGvv7qQcXF4p2QO5X0vtrOq5qpa5TrzPw0MK8PEfX3QVccvX+SAYzf/javKNT
+Ep8NIh+Z/Wp9gYY/pjKui7BI//JZ4F9UqKEtnD06O7lKr11Jdmc=
+=h7Kh
+-----END PGP SIGNATURE----

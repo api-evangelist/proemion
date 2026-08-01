@@ -1,0 +1,28 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.proemion.com/api/, https://api.proemion.com/.well-known/openid-configuration
+note: >-
+  Cross-cutting semantics captured from the published DataPlatform API docs and
+  the live OIDC discovery document. Only conventions with published/observed
+  evidence are asserted; pagination, idempotency, and rate-limit signaling are
+  not documented on Proemion's public developer surface at time of capture.
+authentication:
+  style: oauth2-client-credentials
+  provider: OpenID Connect (Keycloak)
+  token_endpoint: https://dataportal.proemion.com/auth/realms/af0b450b-63cb-4f6e-a994-bdab447c64ba/protocol/openid-connect/token
+  ref: authentication/proemion-authentication.yml
+transport:
+  scheme: https
+  tls: TLSv1.3
+  hsts: true
+media_type: application/json
+idempotency:
+  documented: false
+pagination:
+  documented: false
+rate_limits:
+  documented: false
+related:
+  authentication: authentication/proemion-authentication.yml
+  scopes: scopes/proemion-scopes.yml
+  lifecycle: lifecycle/proemion-lifecycle.yml

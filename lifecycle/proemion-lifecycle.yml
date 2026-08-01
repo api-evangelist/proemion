@@ -1,0 +1,13 @@
+generated: '2026-07-20'
+method: searched
+source: https://status.proemion.com/, https://docs.proemion.com/
+status_page: https://status.proemion.com/
+versioning:
+  scheme: unknown
+  note: Public versioning policy not documented on the developer surface at time of capture.
+deprecation:
+  policy_url: null
+  note: No published deprecation/sunset policy located.
+sla:
+  url: null
+support: https://docs.proemion.com/#support

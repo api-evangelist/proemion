@@ -1,0 +1,27 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/Proemion/CANlink-Mobile-API-Clients
+note: >-
+  First-party open-source client libraries for the CANlink mobile 10000 protobuf
+  device API, authored by Proemion GmbH (Apache-2.0). Distributed via GitHub;
+  not published to PyPI at time of capture (no releases). No first-party SDK
+  found for the DataPlatform REST API.
+packages:
+- language: python
+  registry: github
+  name: clmprotoclient
+  version: 1.0.3
+  description: Client to communicate with the CANlink mobile 10000 protobuf API (ships the clmshell CLI).
+  url: https://github.com/Proemion/CANlink-Mobile-API-Clients/tree/main/clmprotoclient
+  install: pip install "git+https://github.com/Proemion/CANlink-Mobile-API-Clients.git#subdirectory=clmprotoclient"
+  license: Apache-2.0
+  official: true
+- language: python
+  registry: github
+  name: clmprotowrapper
+  version: 3.3.0
+  description: Protobuf API bindings for the CANlink mobile 10000 (CLM10000 protocol).
+  url: https://github.com/Proemion/CANlink-Mobile-API-Clients/tree/main/clmprotowrapper
+  install: pip install "git+https://github.com/Proemion/CANlink-Mobile-API-Clients.git#subdirectory=clmprotowrapper"
+  license: Apache-2.0
+  official: true

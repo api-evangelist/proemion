@@ -1,0 +1,39 @@
+# Proemion
+
+> Telematics for off-highway and heavy equipment OEMs — data collection embedded
+> directly into the machine, down to the ECU, across CAN and Ethernet networks.
+> Proemion's API-first DataPlatform telematics cloud, DataPortal, Machine Companion
+> app, ProInsights analytics, and CANlink hardware let manufacturers and fleets
+> obtain, configure, and analyze machine data. Serves construction, agriculture,
+> material handling, municipal services, and ground-support-equipment markets.
+
+## APIs
+
+- [DataPlatform REST API](https://docs.proemion.com/api/): Obtain and configure machine data from the API-first DataPlatform telematics cloud. OAuth2 client-credentials (OpenID Connect / Keycloak). Host: https://api.proemion.com
+- [AEMP API](https://docs.proemion.com/aemp/): Export machine data per the AEMP (ISO 15143-3) telematics standard for mixed-fleet interoperability.
+- [CANlink mobile 10000 API](https://docs.proemion.com/canlink-mobile-10000-api/): HTTPS/WebSocket protobuf API to integrate the CANlink mobile 10000 telematics control unit (CLM10000 protocol).
+
+## Specs
+
+- [CANlink mobile 10000 protobuf](https://raw.githubusercontent.com/api-evangelist/proemion/refs/heads/main/grpc/proemion-clmapi.proto): proto2 definition (CLM10000 release 3.3.0).
+
+## Authentication
+
+- [OpenID Connect discovery](https://api.proemion.com/.well-known/openid-configuration): Keycloak realm, client-credentials token endpoint.
+- [API client management](https://docs.proemion.com/docs/dataportal/organization_structure/#api-client-management): Issue OAuth2 API client credentials in the DataPortal.
+
+## Packages
+
+- [clmprotoclient (Python)](https://github.com/Proemion/CANlink-Mobile-API-Clients/tree/main/clmprotoclient): CANlink mobile 10000 client + clmshell CLI.
+- [clmprotowrapper (Python)](https://github.com/Proemion/CANlink-Mobile-API-Clients/tree/main/clmprotowrapper): Protobuf API bindings.
+
+## Docs
+
+- [Developer documentation](https://docs.proemion.com/)
+- [DataPortal login](https://dataportal.proemion.com/#!/login)
+- [Blog](https://www.proemion.com/en/resources/knowledge/blog.html)
+- [Status page](https://status.proemion.com/)
+- [Trust center](https://trust.proemion.com/)
+- [Security policy (security.txt)](https://proemion.com/.well-known/security.txt)
+- [Vulnerability disclosure policy](https://docs.proemion.com/docs/shared/pdf/proemion_vdp_v1.0.pdf)
+- [GitHub](https://github.com/Proemion)
