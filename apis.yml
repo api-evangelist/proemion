@@ -16,6 +16,17 @@ description: >-
   an AEMP/ISO 15143-3 standard export, and the CANlink mobile 10000 protobuf
   device API. It serves construction, agriculture, material handling, municipal
   services, and ground-support-equipment markets.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: self-serve
